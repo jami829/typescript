@@ -1,0 +1,15 @@
+// 어떻게 타입스크립트 -> 자바스크립트 로 컴파일 할 것인지 옵션을 준다.
+{
+  "compilerOptions": {
+    "module": "commonjs", // node.js를 사용하게 함으로써 import, export도 가능해짐
+    "target": "ES2015",
+    "sourceMap": true
+  },
+  // 어떤 파일들이 타입스크립트에 컴파일과정에 포함되는지 알려줌
+  "include": [
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
