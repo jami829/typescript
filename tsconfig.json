@@ -3,13 +3,18 @@
   "compilerOptions": {
     "module": "commonjs", // node.js를 사용하게 함으로써 import, export도 가능해짐
     "target": "ES2015",
-    "sourceMap": true
+    "sourceMap": true,
+    // 컴파일된 파일의 저장공간 설정
+    "outDir": "dist"
   },
   // 어떤 파일들이 타입스크립트에 컴파일과정에 포함되는지 알려줌
   "include": [
-    "index.ts"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
   ]
 }
+// 모든 typeScript들은 src로 들어가게 될 것.
+// 그리고 모든 컴파일 된 것들은 dist에서 생성이 될 것.(index.js & index.js.map)
+// .gitingnore에 dist 추가할 것.
